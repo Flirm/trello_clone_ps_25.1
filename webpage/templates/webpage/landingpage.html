@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "webpage/css/landingpage.css" %}">
+{% endblock %}
+
+
+{% block title %}
+TralaTrello
+{% endblock %}
+
+{% block content %}
+<section class="d-flex min-vh-100 justify-content-center align-items-center">
+    <div class="col-5 pr-2">
+        <h1>Melhore a produtividade da sua equipe com um toque de diversão!</h1>
+        <h3>Com TralaTrello, organize as tarefas de seu time e ao completá-las serão recompensados com pontos.</h3>
+    </div>
+    <div class="col-3">
+        <img src="{% static 'webpage/images/logo.png' %}" class="w-100 h-100 float-start" alt="Representative image">
+    </div>
+</section>
+{% endblock %}
